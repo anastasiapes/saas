@@ -1,0 +1,15 @@
+
+<body style="text-align: center;">
+	<h1 style="text-align: center">Log In</h1>
+   <%= form_tag '/login' do %>
+   <%= label_tag :username%><br>
+   <%= text_field_tag :username %><br>
+   <%= label_tag :password%><br>
+   <%= password_field_tag :password%><br><br>
+   <%= submit_tag "Login"%>
+
+    <p>New user? <%= link_to "Sign up now!", 'users/new' %></p>
+  </div>
+</div>
+<%end%>
+</body>

@@ -1,0 +1,10 @@
+<body style="text-align: center;">
+<h1 style="text-align: center">Sign Up</h1>
+<%= form_for @user do |f|%>
+  <%= f.label :username%><br>
+  <%= f.text_field :username%><br>
+  <%= f.label :password%><br>
+  <%= f.password_field :password%><br><br>
+  <%= f.submit %>
+<%end%>
+</body>
